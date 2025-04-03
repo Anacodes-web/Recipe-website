@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    --color-black: #000000;
+  --color-green: #206e0d;
+  --color-white: white;
+  --color-lightGreen: #f1fff6;
+  --color-wheat: wheat;
+  --my-font: "Love Light", serif;
+}
+
+@layer utilities {
+    .text-shadow-sm {
+      text-shadow: 1px 1px 2px rgb(245, 222, 179);
+    }
+    .text-shadow-md {
+      text-shadow: 2px 2px 4px rgb(245, 222, 179);
+    }
+    .text-shadow-lg {
+      text-shadow: 3px 3px 6px rgb(245, 222, 179);
+    }
+    .text-shadow-g {
+      text-shadow: 1px 1px 2px rgb(32, 110, 13);
+    }
+    .text-shadow-gmd {
+      text-shadow: 2px 2px 4px rgb(32, 110, 13);
+    }
+    .text-shadow-glg {
+      text-shadow: 5px 5px 10px rgb(32, 110, 13);
+    }
+
+    
+  }
+  
+  @layer base {
+    :root {
+      --my-font: "Love Light", serif;
+    }
+  
+    .font-love {
+      font-family: var(--my-font);
+    }
+  }
